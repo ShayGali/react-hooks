@@ -17,7 +17,14 @@ function App() {
   }
   return (
     <>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: 50,
+        }}
+      >
         <span>Select example:</span>
         <button
           onClick={() => setExample("Simple")}

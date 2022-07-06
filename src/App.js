@@ -20,15 +20,28 @@ function App() {
       case "useRef":
         return <Ref />;
       default:
-        return <p>select example</p>;
+        return <p>Select Hook Example</p>;
     }
   }
+
   return (
     <div style={{ display: "flex", width: "100%" }}>
       <Sidebar changeExample={(example) => setHooksExample(example)} />
       <div style={{ flex: 9 }}>
         <h1 style={{ textAlign: "center" }}>{hooksExample}</h1>
         {displayComponent()}
+        {hooksExample !== "" && (
+          <a
+            href={`https://github.com/ShayGali/react-hooks/blob/master/src/Hooks%20Examples/${hooksExample.slice(
+              3,
+              hooksExample.length
+            )}/README.md`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h3>Link for summary</h3>
+          </a>
+        )}
       </div>
     </div>
   );

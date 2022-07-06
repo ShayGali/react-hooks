@@ -1,12 +1,10 @@
 import { useState } from "react";
-
 import UpdateState from "./components/UpdateState";
 import FuncInitialState from "./components/FuncInitialState";
 import ObjState from "./components/ObjState";
 
 function App() {
   const [example, setExample] = useState("");
-
   function showExample() {
     switch (example) {
       case "UpdateState":

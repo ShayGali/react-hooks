@@ -1,6 +1,5 @@
 .container {
   flex: 1;
-  top: 50px;
 }
 
 .list {
@@ -13,7 +12,7 @@
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-inline-start: 15px;
+  padding-inline-start: 10px;
   margin: 3px;
   border: 1px solid #ccc !important;
   border-radius: 16px;

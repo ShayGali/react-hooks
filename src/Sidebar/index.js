@@ -3,7 +3,9 @@ import React from "react";
 import "./Sidebar.css";
 export default function Sidebar({ changeExample }) {
   function clickHandler(e) {
-    changeExample(e.target.firstChild.innerHTML);
+    if (e.target.firstChild.innerHTML)
+      changeExample(e.target.firstChild.innerHTML);
+    else changeExample(e.target.innerHTML);
   }
   return (
     <div className="container">

@@ -47,7 +47,7 @@ export default function Sidebar({ changeExample }) {
           <span>useId</span>
         </li>
         <li className="list-item" onClick={clickHandler}>
-          <span>custom-hook</span>
+          <span>custom-hooks</span>
         </li>
       </ul>
     </div>

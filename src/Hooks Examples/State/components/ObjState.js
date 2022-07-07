@@ -12,12 +12,11 @@ function ObjState() {
   }
 
   return (
-    <>
+    <div>
       <p>Your name is: {`${name.fName} ${name.lName}`}</p>
       <button onClick={updateSateGood}>update name(good)</button>
-      <span>{"  "}</span>
       <button onClick={updateSateBad}>update name(bad)</button>
-    </>
+    </div>
   );
 }
 

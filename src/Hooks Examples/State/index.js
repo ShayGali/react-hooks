@@ -20,14 +20,7 @@ function App() {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          margin: 50,
-        }}
-      >
+      <div className="example-container">
         <span>Select example:</span>
         <button
           onClick={() => setExample("UpdateState")}
@@ -48,7 +41,7 @@ function App() {
           ObjState
         </button>
       </div>
-      {showExample()}
+      <div className="example-container">{showExample()}</div>
     </>
   );
 }

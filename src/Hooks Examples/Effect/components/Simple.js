@@ -20,7 +20,9 @@ export default function Simple() {
 
   return (
     <>
-      <div>
+      <h4 className="mt-5 text-center">select data</h4>
+
+      <div className="example-container mt-0">
         <button onClick={() => setResource("posts")}>Posts</button>
         <button onClick={() => setResource("users")}>Users</button>
         <button onClick={() => setResource("comments")}>Comments</button>

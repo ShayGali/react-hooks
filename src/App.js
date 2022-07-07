@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./App.css";
+
 import State from "./Hooks Examples/State";
 import Effect from "./Hooks Examples/Effect";
 import Memo from "./Hooks Examples/Memo";
@@ -56,8 +58,9 @@ function App() {
   return (
     <div>
       <Navbar changeExample={(example) => setHooksExample(example)} />
+      <hr />
       <div style={{ flex: 9 }}>
-        <h1 style={{ textAlign: "center" }}>{hooksExample}</h1>
+        <h1 style={{ textAlign: "center", marginTop: "1%" }}>{hooksExample}</h1>
         {displayComponent()}
         {hooksExample !== "" && (
           <a
@@ -68,7 +71,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <h3>Link for summary</h3>
+            <h5 className="ms-5">Link for summary</h5>
           </a>
         )}
       </div>

@@ -1,9 +1,10 @@
 # React Hooks Summary
-
 <div dir="rtl">
 סיכום שהכנתי על hook בריאקט.
 
 [לינק לאתר של הדוגמאות קוד](https://shaygali.github.io/react-hooks/)
+
+<div align="center">
 
 |         שם          |                                                   קישור לסיכום                                                   |                                                          הסבר בקצרה |
 |:-------------------:|:----------------------------------------------------------------------------------------------------------------:|--------------------------------------------------------------------:|
@@ -21,14 +22,13 @@
 |        useId        |               [useId](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Id)               ||
 |    custom-hooks     |      [custom-hooks](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/custom-hooks)       ||
 
-
-### לינקים
-* [פליליסט שמסביר את כל ה hookים](https://www.youtube.com/watch?v=O6P86uwfdR0&list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h)
-* [דוקומנטציה של ה hookים ](https://reactjs.org/docs/hooks-reference.html)
-* [w3schools](https://www.w3schools.com/react/react_hooks.asp)
-* [webdevsimplified blog](https://blog.webdevsimplified.com/)
 </div>
 
+### לינקים
 
+* [פליליסט שמסביר את כל ה hookים](https://www.youtube.com/watch?v=O6P86uwfdR0&list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h)
+* [דוקומנטציה של ה hookים](https://reactjs.org/docs/hooks-reference.html)
+* [w3schools](https://www.w3schools.com/react/react_hooks.asp)
+* [webdevsimplified blog](https://blog.webdevsimplified.com/)
 
-
+</div>

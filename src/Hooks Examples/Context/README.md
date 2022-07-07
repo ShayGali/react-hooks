@@ -171,4 +171,101 @@ export default function FunctionContextComponent() {
 > ה context עובד כמו satet, כל פעם שהוא יתעדכן, יתבצע רינדור מחדש, אפשר להשתמש ב useMemo כדי לייעל תהליכים
 > גם אם משתמשים ב useContext חייבים להשתמש ב Provider
 
+## שימוש עם הוק שלנו
+
+כדי להקל על התהליך של הגישה למידע, ולרכז את כל הקוד שקשור למקום אחד אפשר ליצור hook משלנו שהוא יהיה ה context
+
+* נייבא את useState, createContext, useContext
+* ניצור את contextים שנרצה
+* ניצור את ה hook כדי שיאפשרו לנו להשתמש ב context בצורה יותר ברורה וקלה
+* ניצור קומפוננט ששם יהיו לנו הערכים שנרצה להעביר - צריך לקבל את הchildren מה props ולשים אותם בתוך ה Providerים
+
+<div dir="ltr">
+
+```js
+import React, {useState, createContext, useContext} from "react";
+
+const ThemeContext = createContext();
+const UpdateThemeContext = createContext();
+
+// הוק משלנו כדי להקל עלינו עם השימוש
+export function useTheme() {
+  return useContext(ThemeContext);
+}
+
+export function useThemeUpdate() {
+  return useContext(UpdateThemeContext);
+}
+
+export function ThemeProvider({children}) {
+  const [darkTheme, setDarkTheme] = useState(true);
+
+  function toggleTheme() {
+    setDarkTheme((prevState) => !prevState);
+  }
+
+  return (
+    <ThemeContext.Provider value={darkTheme}>
+      <UpdateThemeContext.Provider value={toggleTheme}>
+        {children}
+      </UpdateThemeContext.Provider>
+    </ThemeContext.Provider>
+  );
+}
+```
+
+</div>
+עכשיו כדי להשתמש במידע ובהוקים
+
+**באבא:**
+
+* נייבא את הקומפוננט שיצרנו(ששם יש את ה provider)
+* נעטוף את הילדים שנרצה
+
+**בבנים:**
+
+* נייבא את ההוקים שיצרנו
+* נוציא את המידע מהם
+
+<div dir="ltr">
+
+```js
+// in the root component
+import {ThemeProvider} from "./ThemeContext";
+import FunctionContextComponent from "./FunctionContextComponent";
+
+export default function CustomHook() {
+  return (
+    <ThemeProvider>
+      <FunctionContextComponent/>
+    </ThemeProvider>
+  );
+}
+
+
+// in the children
+import {useTheme, useThemeUpdate} from "./ThemeContext";
+
+export default function FunctionContextComponent() {
+  const darkTheme = useTheme();
+  const toggleTheme = useThemeUpdate();
+
+  const theme = {
+    backgroundColor: darkTheme ? "#333" : "#CCC",
+    color: darkTheme ? "#CCC" : "#333",
+    padding: "2rem",
+    margin: "2rem",
+  };
+
+  return (
+    <>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+      <div style={theme}>Function Theme</div>
+    </>
+  );
+}
+```
+
+</div>
+
 </div>

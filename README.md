@@ -21,7 +21,7 @@
 |  useDeferredValue   |    [useDeferredValue](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/DeferredValue)    ||
 | useImperativeHandle | [useImperativeHandle](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/ImperativeHandle) ||
 |        useId        |               [useId](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Id)               ||
-|    custom-hooks     |      [custom-hooks](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/custom-hooks)       ||
+|    custom-hooks     |      [custom-hooks](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/custom-hooks)       |                     יצירה של hook משלנו כדי לאחד לוגיקה ושימוש מחדש |
 
 </div>
 

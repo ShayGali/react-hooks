@@ -20,9 +20,11 @@ import CustomHook from "./Hooks Examples/custom-hooks";
 import Navbar from "./components/Navbar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import LandPage from "./components/LandPage";
 
 function App() {
   const [hooksExample, setHooksExample] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   function displayComponent() {
     switch (hooksExample) {
@@ -53,10 +55,11 @@ function App() {
       case "custom-hooks":
         return <CustomHook />;
       default:
-        return <p>Select Hook Example</p>;
+        return (
+          <LandPage setIsOpen={setIsOpen} setHooksExample={setHooksExample} />
+        );
     }
   }
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>

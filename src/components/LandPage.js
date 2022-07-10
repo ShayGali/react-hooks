@@ -2,7 +2,7 @@ import React from "react";
 
 export default function LandPage({ setIsOpen, setHooksExample }) {
   return (
-    <>
+    <div className="m-3 fz-3 fs-5">
       <p>Hello, for get start select the hook you want to learn about.</p>
       <p
         style={{
@@ -26,8 +26,7 @@ export default function LandPage({ setIsOpen, setHooksExample }) {
         >
           click here for learn about useState
         </span>
-        .
       </p>
-    </>
+    </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Sidebar({ isOpen, setIsOpen, changeExample }) {
           <span className="text-btn">useContext</span>
           <span className="text-btn">useReducer</span>
           <span className="text-btn">useCallback</span>
-          <span className="text-btn">useCallback</span>
+          <span className="text-btn">useLayoutEffect</span>
           <span className="text-btn">useTransition</span>
           <span className="text-btn">useDeferredValue</span>
           <span className="text-btn">useImperativeHandle</span>

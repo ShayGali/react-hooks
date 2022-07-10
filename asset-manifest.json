@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-hooks/static/css/main.d882355b.css",
-    "main.js": "/react-hooks/static/js/main.8084d62c.js",
+    "main.js": "/react-hooks/static/js/main.07405468.js",
     "index.html": "/react-hooks/index.html",
     "main.d882355b.css.map": "/react-hooks/static/css/main.d882355b.css.map",
-    "main.8084d62c.js.map": "/react-hooks/static/js/main.8084d62c.js.map"
+    "main.07405468.js.map": "/react-hooks/static/js/main.07405468.js.map"
   },
   "entrypoints": [
     "static/css/main.d882355b.css",
-    "static/js/main.8084d62c.js"
+    "static/js/main.07405468.js"
   ]
 }

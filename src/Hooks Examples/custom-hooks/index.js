@@ -1,5 +1,19 @@
-import React from "react";
+import useLocalStorage from "./useLocalStorage";
+import useUpdateLogger from "./useUpdateLogger";
 
 export default function App() {
-  return <div>App</div>;
+  // const [name, setName] = useState("");
+  // const [name, setName] = useLocalStorage("name", ()=>"");
+  const [name, setName] = useLocalStorage("name", "");
+  useUpdateLogger(name);
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+    </div>
+  );
 }

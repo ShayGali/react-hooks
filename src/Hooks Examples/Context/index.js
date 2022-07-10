@@ -4,10 +4,12 @@ import CustomHook from "./components/CustomHook";
 
 export default function App() {
   return (
-    <>
-      {/* <SimpleHook /> */}
+    <div align="center">
+      <h5>first example</h5>
+      <SimpleHook />
+      <h5>second example</h5>
       <CustomHook />
-    </>
+    </div>
   );
 }
 

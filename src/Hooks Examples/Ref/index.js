@@ -49,7 +49,7 @@ function App() {
           PervValueOfState
         </button>
       </div>
-      {showExample()}
+      <div align="center  ">{showExample()}</div>
     </>
   );
 }

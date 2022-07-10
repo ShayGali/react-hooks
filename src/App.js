@@ -71,7 +71,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <h5 className="ms-5">Link for summary</h5>
+            <h5 className="ms-5">Link for {hooksExample} summary</h5>
           </a>
         )}
       </div>

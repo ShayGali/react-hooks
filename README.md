@@ -1,4 +1,5 @@
 # React Hooks Summary
+
 <div dir="rtl">
 סיכום שהכנתי על hook בריאקט.
 
@@ -14,7 +15,7 @@
 |       useRef        |              [useRef](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Ref)              |   1.Reference Element<br>2. כמו סטייט<br>3. שמירת ערך קודם של סטייט |
 |     useContext      |          [useContext](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Context)          |                                      דרך להעביר מידע בין קומפוננטות |
 |     useReducer      |          [useReducer](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Reducer)          | ניהול סטייט בצורה יותר מסובכת <br>(טוב לסטייס מסובך שקשה לנהל אותו) |
-|     useCallback     |         [useCallback](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Callback)         ||
+|     useCallback     |         [useCallback](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Callback)         |   מאפשר לזכור רפרנס לפומקתיה, וליצור אותה מחדש רק כאשר ערכים משתנים |
 |   useLayoutEffect   |     [useLayoutEffect](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/LayoutEffect)     ||
 |    useTransition    |       [useTransition](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/Transition)       ||
 |  useDeferredValue   |    [useDeferredValue](https://github.com/ShayGali/react-hooks/tree/master/src/Hooks%20Examples/DeferredValue)    ||

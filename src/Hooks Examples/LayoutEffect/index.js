@@ -14,6 +14,7 @@ export default function App() {
 
   return (
     <div align="center">
+      <h3 className="text-muted">In this section its better to read the summary</h3>
       <button ref={button} onClick={() => setShow((prev) => !prev)}>
         click
       </button>

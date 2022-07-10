@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Simple from "./components/Simple";
 import WindowExample from "./components/WindowExample";
-
 function App() {
   const [example, setExample] = useState("");
 

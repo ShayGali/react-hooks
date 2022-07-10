@@ -8,7 +8,7 @@ export default function App() {
   useUpdateLogger(name);
 
   return (
-    <div>
+    <div align="center">
       <input
         type="text"
         value={name}

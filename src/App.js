@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import "./App.css";
 
+import Sidebar from "./components/Sidebar";
+
 import State from "./Hooks Examples/State";
 import Effect from "./Hooks Examples/Effect";
 import Memo from "./Hooks Examples/Memo";
@@ -54,11 +56,24 @@ function App() {
         return <p>Select Hook Example</p>;
     }
   }
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
-      <Navbar changeExample={(example) => setHooksExample(example)} />
-      <hr />
+    <>
+      <Navbar
+        changeExample={(example) => setHooksExample(example)}
+        setIsOpen={setIsOpen}
+        subject={hooksExample}
+        subjectSummaryUrl={`https://github.com/ShayGali/react-hooks/blob/master/src/Hooks%20Examples/${hooksExample.replace(
+          "use",
+          ""
+        )}/README.md`}
+      />
+      <Sidebar
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        changeExample={(example) => setHooksExample(example)}
+      />
       <div style={{ flex: 9 }}>
         <h1 style={{ textAlign: "center", marginTop: "1%" }}>{hooksExample}</h1>
         {displayComponent()}
@@ -75,7 +90,7 @@ function App() {
           </a>
         )}
       </div>
-    </div>
+    </>
   );
 }
 

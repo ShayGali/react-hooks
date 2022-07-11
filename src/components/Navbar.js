@@ -1,4 +1,4 @@
-import { useState, useEffect, useDeferredValue } from "react";
+import { useState, useEffect } from "react";
 
 import {
   Container,
@@ -16,7 +16,7 @@ export default function Navbar({
   subject,
   setExample,
 }) {
-  const [isDisabled, setIsDisabled] = useState(subject === "");
+  const [isDisabled] = useState(subject === "");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {

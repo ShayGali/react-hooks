@@ -66,6 +66,7 @@ function App() {
       <Navbar
         changeExample={(example) => setHooksExample(example)}
         setIsOpen={setIsOpen}
+        setExample={setHooksExample}
         subject={hooksExample}
         subjectSummaryUrl={`https://github.com/ShayGali/react-hooks/blob/master/src/Hooks%20Examples/${hooksExample.replace(
           "use",

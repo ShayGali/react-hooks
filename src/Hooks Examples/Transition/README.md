@@ -1,6 +1,6 @@
 # useTransition
 
-<div dir="rtl"> 
+<div dir="rtl">
 
 מאפשר לנו, להריץ setState בחלקים שונים.
 
@@ -79,7 +79,6 @@ export default function UseTransitionExample() {
 ```
 
 </div>
-
 
 > צריך לשים לב שזה גורם לאפליקציה שלנו להתרנדר יותר, לכן צריך להיזר, ולהשתמש ב useTransition רק כשצריך.
 </div>

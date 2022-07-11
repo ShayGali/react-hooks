@@ -41,7 +41,9 @@ function App() {
           ReferentialEquality
         </button>
       </div>
-      {showExample()}
+      <div align="center" className="mt-2">
+        {showExample()}
+      </div>
     </>
   );
 }
